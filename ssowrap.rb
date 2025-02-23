@@ -5,21 +5,21 @@
 class Ssowrap < Formula
   desc "ssowrap is a single binary tool that run a command using AWS SSO credentials."
   homepage "https://github.com/winebarrel/ssowrap"
-  version "0.0.3"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/winebarrel/ssowrap/releases/download/v0.0.3/ssowrap_0.0.3_darwin_amd64.tar.gz"
-      sha256 "de7b106c87029519297a6f401d3db8a5e1fad315e6157fbb9c7abad9e9ecb9b5"
+      url "https://github.com/winebarrel/ssowrap/releases/download/v0.1.0/ssowrap_0.1.0_darwin_amd64.tar.gz"
+      sha256 "ddd5424f1a244228f764663219da55f148c01f8e682b40197688eb441ebbba3f"
 
       def install
         bin.install 'ssowrap'
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/winebarrel/ssowrap/releases/download/v0.0.3/ssowrap_0.0.3_darwin_arm64.tar.gz"
-      sha256 "465a60e1553ed6b9b9fe80229efd828da4eb9c320af8e6766979fa295aa19bfd"
+      url "https://github.com/winebarrel/ssowrap/releases/download/v0.1.0/ssowrap_0.1.0_darwin_arm64.tar.gz"
+      sha256 "6e447a2e7a4dbdece81001ec72577350bb41b1b9357cd8962f3c7df0d313cdd8"
 
       def install
         bin.install 'ssowrap'
@@ -30,8 +30,8 @@ class Ssowrap < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/winebarrel/ssowrap/releases/download/v0.0.3/ssowrap_0.0.3_linux_amd64.tar.gz"
-        sha256 "81c299266a2b401aab7bd355654e3be1bcb024bed261ab01a57278e44e97d21f"
+        url "https://github.com/winebarrel/ssowrap/releases/download/v0.1.0/ssowrap_0.1.0_linux_amd64.tar.gz"
+        sha256 "2a9c0d213af584f633ab0d01439d6028128e9cfdc0d4f475944eedc0383c8e65"
 
         def install
           bin.install 'ssowrap'
@@ -40,8 +40,8 @@ class Ssowrap < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/winebarrel/ssowrap/releases/download/v0.0.3/ssowrap_0.0.3_linux_arm64.tar.gz"
-        sha256 "bca1bfcb17f4be7f616c7e42d578984c4e250c57e7810f58712deaf6cac4be7f"
+        url "https://github.com/winebarrel/ssowrap/releases/download/v0.1.0/ssowrap_0.1.0_linux_arm64.tar.gz"
+        sha256 "836bdbd6ef57e3a09ee207a9a6b159bef7d4e2c1d56a306a12683f10a022bda3"
 
         def install
           bin.install 'ssowrap'
